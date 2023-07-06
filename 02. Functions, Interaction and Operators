@@ -1,0 +1,100 @@
+# Functions
+Functions are the main “building blocks” of the program. They allow the code to be called many times without repetition.
+
+Syntax:
+```javascript
+function printMyName(parameter1, parameter2, .....) {
+	let fullName = parameter1+parameter2
+	alert(fullName);	
+}
+printMyName(argument1, argument2);
+```
+Example:
+```javascript
+function printMyName(firstName, lastName) {
+	let fullName = firstName+lastName
+	alert(fullName);	
+}
+printMyName("Mohamed", "Anwar");
+```
+Default values in parameters,
+```javascript
+function printMyName(firstName, lastName = "Anwar") {
+	let fullName = firstName+lastName
+	alert(fullName);	
+}
+printMyName("Mohamed", "Ali");
+```
+Returning a value,
+```javascript
+function calculateAge(birthYear, currentYear) { // Parameter
+		let age = currentYear - birthYear
+		return age
+}
+let myAge = calculateAge(1995, 2023) //Arguments
+console.log(myAge)
+```
+
+# Interaction: alert, prompt, confirm
+Alert:
+```javascript
+alert("Hello");
+```
+Prompt:
+```javascript
+let age =  prompt('How old are you?',  100); // Where 100 is default value and its optional 
+```
+
+Confirm:
+```javascript
+let isUserWantsToExit =  confirm('Are you sure, You want to exit?'); 
+```
+
+# Operators
+1. Assignment operator
+2. Arithmetic Operator
+3. Comparision operator
+4. Ternary operator
+5. Logical operators
+
+**Assignment operator,**
+```javascript
+// 1. Assignment Operators Symbol: =
+let firstNumber = 55;
+
+
+console.log(firstNumber)
+```
+**Arithmetic Operator**
+Add +
+55 + 22
+Substraction - 
+55 - 22
+Multiplication *
+55 * 22
+Divide /
+55 / 22
+Remaining %
+55 % 22
+Exponential **
+1.6**2
+Increment,
+1. Left Side Increment
+		++firstNumber
+			console.log(firstNumber);
+2. Right side increment
+firstNumber++
+console.log(firstNumber);
+Left side increment returns incremented value immediately after the increment and stores the incremented value to the original variable name
+Right side increment returns old value immediately after the increment and stores the incremented value to the original variable name.
+
+Decrement,
+4. Left Side Decrement
+--firstNumber
+console.log(firstNumber);
+5. Right Side Decrement
+firstNumber--
+console.log(firstNumber);
+
+
+
